@@ -1,0 +1,43 @@
+[
+    {
+      "imgSrc": "https://ofertasroyalenfield.com.br/images/pagina-hunter/dapper-grey-home.png",
+      "nomeCarro": "Toyota Corolla",
+      "tipoCarro": "Sedan Médio",
+      "valorDiario": 93,
+      "dias": 1,
+      "valorTotal": 93,
+      "cambio": "Automático",
+      "capacidadePortaMala": "460L"
+    },
+    {
+      "imgSrc": "https://ofertasroyalenfield.com.br/images/motos/himalayan-v2.png",
+      "nomeCarro": "Honda Civic",
+      "tipoCarro": "Sedan Médio",
+      "valorDiario": 95,
+      "dias": 2,
+      "valorTotal": 190,
+      "cambio": "Automático",
+      "capacidadePortaMala": "470L"
+    },
+    {
+      "imgSrc": "https://ofertasroyalenfield.com.br/images/motos/interceptor-2.png",
+      "nomeCarro": "Jeep Compass",
+      "tipoCarro": "SUV",
+      "valorDiario": 120,
+      "dias": 3,
+      "valorTotal": 360,
+      "cambio": "Automático",
+      "capacidadePortaMala": "500L"
+    },
+    {
+      "imgSrc": "https://ofertasroyalenfield.com.br/images/pagina-super-meteor/moto_astral_black.webp",
+      "nomeCarro": "Volkswagen Golf",
+      "tipoCarro": "Hatch Médio",
+      "valorDiario": 85,
+      "dias": 1,
+      "valorTotal": 85,
+      "cambio": "Manual",
+      "capacidadePortaMala": "350L"
+    }
+  ]
+  

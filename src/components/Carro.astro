@@ -1,38 +1,103 @@
 ---
 import Image from "astro/components/Image.astro";
-
-import ImgCarro from "/public/images/corolla.png"
-
+const { imgSrc, nomeCarro, tipoCarro, valorDiario, dias, valorTotal, cambio, capacidadePortaMala } = Astro.props;
 ---
-<div>
+
+<div class="container-main">
     <div class="foto">
-        <Image src={ImgCarro} alt="Toyota Corrola" />
+        <Image width="250" height="250" src={imgSrc} alt="Toyota Corolla" />
     </div>
     <div class="conteudo">
         <div class="cima">
             <div class="nome-carro">
-                <h3>Toyota Corolla</h3>
-                <p>Sedan Medio</p>
+                <h3>{nomeCarro}</h3>
+                <p>{tipoCarro}</p>
             </div>
             <div class="valor-diario">
-                <h4>R$ 93,00</h4>
+                <h4>{valorDiario}</h4>
                 <p>valor diário</p>
             </div>
             <div class="diarias">
-                <h4>01</h4>
+                <h4>{dias}</h4>
                 <p>dia(s)</p>
             </div>
             <div class="valor-total">
-                <h4>R$ 93,00</h4>
+                <h4>{valorTotal}</h4>
                 <p>Valor total</p>
             </div>
         </div>
         <div class="baixo">
-            
+            <div class="esquerda">
+                <p>{cambio}</p>
+                <p>{capacidadePortaMala}</p>
+            </div>
+            <div class="direita">
+                <button class="btn-alugar">Alugar</button>
+            </div>
         </div>
     </div>
 </div>
 
 <style>
+.container-main {
+    display: flex;
+    align-items: flex-start;
+}
 
+.foto {
+    flex-shrink: 0;
+}
+
+.conteudo {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-left: 40px;
+}
+
+.cima {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    width: 180%;
+}
+
+.nome-carro, .valor-diario, .diarias, .valor-total {
+    margin-bottom: 10px;
+}
+
+.nome-carro h3 {
+    margin: 0;
+}
+
+.valor-diario, .diarias, .valor-total h4 {
+    margin: 0;
+}
+
+.baixo {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 20px;
+    width: 180%;
+}
+
+.esquerda {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+}
+
+.direita .btn-alugar {
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.direita .btn-alugar:hover {
+    background-color: #0056b3;
+}
 </style>

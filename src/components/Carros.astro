@@ -1,15 +1,27 @@
 ---
-import Carro from "../components/Carro.astro"
+import Carro from "../components/Carro.astro";
+import carrosData from "../carros.json"; // Importa o arquivo JSON
 ---
 
 <div>
-    <Carro></Carro>
-    <Carro></Carro>
-    <Carro></Carro>
-    <Carro></Carro>
+    {carrosData.map((carro) => (
+        <Carro 
+            imgSrc={carro.imgSrc} 
+            nomeCarro={carro.nomeCarro} 
+            tipoCarro={carro.tipoCarro} 
+            valorDiario={carro.valorDiario} 
+            dias={carro.dias} 
+            valorTotal={carro.valorTotal} 
+            cambio={carro.cambio} 
+            capacidadePortaMala={carro.capacidadePortaMala} 
+        />
+    ))}
 </div>
 
-
 <style>
-
+div {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
 </style>
